@@ -4,7 +4,7 @@ void TextManager::ShowText(char* text, int xPos, int yPos, int size)
 {
     TTF_Init();
     SDL_Color textColor = {255, 255, 255, 255};
-    TTF_Font *font = TTF_OpenFont("/home/makenzi/CLionProjects/Pong/Montserrat-Black.ttf", size);
+    TTF_Font *font = TTF_OpenFont("/usr/share/fonts/truetype/ubuntu/Ubuntu-B.ttf", size);
     std::cout << SDL_GetError() << std::endl;
 
     SDL_Surface *textSurface = TTF_RenderText_Solid(font, text, textColor);
